@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <title>Nested Flex</title>
+
+    <style>
+
+      div {
+        font-family: Arial;
+      }
+
+      /*Ex 1*/
+      .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 400px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 100px;        
+      }
+
+        .inbox-label {
+          font-size: 14px;
+          color: rgb(120, 120, 120);
+          margin-bottom: 20px;
+        }
+
+        .email {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+          .sender-picture-container {
+            margin-right: 10px;
+          }
+
+            .sender-picture {
+              height: 50px;
+              width: 50px;
+              object-fit: cover;
+              border-radius: 25px;
+            }
+
+          .email-content {
+            flex: 1;
+          }
+            .email-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 3px;
+            }
+              .sender-name {
+                font-weight: bold;
+                font-size: 18px;
+              }
+
+              .send-time {
+                font-size: 14px;
+                color: rgb(120, 120, 120);
+              }
+            
+            .subject {
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+
+            .message {
+              color: rgb(120, 120, 120);
+            }
+          
+      /*Ex 1*/
+      .tweet {
+        display: flex;
+        width: 420px;
+        margin-left: 20px;
+        
+      }
+
+        .profile-picture-column {
+          margin-right: 10px;
+        }
+          .profile-picture {
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+          }
+
+        .tweet-column {
+          flex: 1;
+        }
+          .tweet-header {
+            display: flex;
+            margin-bottom: 5px;
+          }
+            .tweet-author {
+              font-weight: bold;
+              margin-right: 5px;
+            }
+            .tweet-author-handle {
+              color: rgb(111, 111, 111);
+            }
+
+          .tweet-content {
+            margin-bottom: 15px;
+            line-height: 20px;
+          }
+
+          .video-preview {
+            display: flex;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color:rgb(200, 200, 200);
+            border-radius: 15px;
+            overflow: hidden;
+          }
+
+            .thumbnail-column {
+              width: 100px;
+              height: 100px;
+              margin-right: 10px;
+              background-color: rgb(220, 220, 220);
+            }
+
+            .video-info-column {
+              flex: 1;
+            }
+              .video-website {
+                color: rgb(111, 111, 111);
+                margin-bottom: 3px;
+              }
+              .video-title {
+                line-height: 22px;
+              }
+
+    </style>
+
+  </head>
+
+  <body>
+    <!--Ex 1-->
+    <div class="container">
+
+      <div class="inbox-label">ALL INBOXES</div>
+
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="/youtube-clone/thumbnails/marquespp.webp" alt="">
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Chewy Promotions</div>
+            <div class="send-time">4:58 PM</div>
+        </div>
+          <div class="subject">
+            Biggest sales of the year!
+          </div>
+          <div class="message">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="/youtube-clone/thumbnails/Markiplierpp.webp" alt="">
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Best Buy</div>
+            <div class="send-time">12:32 PM</div>
+        </div>
+          <div class="subject">
+            Your Best Buy eReceipt
+          </div>
+          <div class="message">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+
+
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="/youtube-clone/thumbnails/beastpp.webp" alt="">
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Netflix</div>
+            <div class="send-time">9:00 AM</div>
+        </div>
+          <div class="subject">
+            Here's what's coming soon to Netflix
+          </div>
+          <div class="message">
+            Brand new movies and shows, old favorites...
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <!--Ex 2-->
+    <div class="tweet">
+
+      <div class="profile-picture-column">
+        <img class="profile-picture" src="/youtube-clone/thumbnails/beastpp.webp" alt="">
+      </div>
+      <div class="tweet-column">
+        <div class="tweet-header">
+          <div class="tweet-author">supersimple.dev</div>
+          <div class="tweet-author-handle">@SuperSimpleDev</div>
+        </div>
+        <div class="tweet-content">
+          What is backend web development? A complete overview. New video up!
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-column"></div>
+          <div class="video-info-column">
+            <div class="video-website">youtube.com</div>
+            <div class="video-title">
+              Backend web development - a complete overview (2021)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <title>layout Exercise</title>
+
+    <style>
+      .fb-grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
+      .fbook {
+        width: 200px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      }
+      .fpic {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: left;
+        margin-bottom: 12px;
+      }
+      .fname {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 8px;
+        margin-bottom: 4px;
+        margin-top: 0px;
+      }
+      .fmpicd,
+      .fmutuald {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .fmpic {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: left;
+        margin-bottom: 0px; 
+        margin-left: 8px; 
+      }
+      .fmutual {
+        font-size: 18px;
+        color: rgb(100, 100, 100);
+        margin-left: 8px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+      .fadd {
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+    </style>
+
+  </head>  
+
+  <body>
+    <div class="fb-grid">
+      <div class="fbook">
+        <div><img class="fpic" src="/youtube-clone/thumbnails/marques.webp"></div>
+        <div><p class="fname">Marques</p></div>
+        <div>
+          <div class="fmpicd"><img class="fmpic" src="/youtube-clone/thumbnails/Markiplierpp.webp"></div>
+          <div class="fmutuald"><p class="fmutual">2 mutual friends</p></div>
+        </div> 
+        <div><button class="fadd">Add Friend</button></div>
+      </div>
+  
+      <div class="fbook">
+        <div><img class="fpic" src="/youtube-clone/thumbnails/Markiplier.webp"></div>
+        <div><p class="fname">Markiplier</p></div>
+        <div>
+          <div class="fmpicd"><img class="fmpic" src="/youtube-clone/thumbnails/sniperwolfpp.webp"></div>
+          <div class="fmutuald"><p class="fmutual">3 mutual friends</p></div>
+        </div> 
+        <div><button class="fadd">Add Friend</button></div>
+      </div>
+  
+      <div class="fbook">
+        <div><img class="fpic" src="/youtube-clone/thumbnails/sniperwolf.webp"></div>
+        <div><p class="fname">Wolf</p></div>
+        <div>
+          <div class="fmpicd"><img class="fmpic" src="/youtube-clone/thumbnails/marquespp.webp"></div>
+          <div class="fmutuald"><p class="fmutual">4 mutual friends</p></div>
+        </div> 
+        <div><button class="fadd">Add Friend</button></div>
+      </div>
+    </div>
+  </body>
+
+</html>

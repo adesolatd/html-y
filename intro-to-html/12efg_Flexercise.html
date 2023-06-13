@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Flexercise</title>
+
+    <style>
+
+    /*Exercise 1*/
+      .container {
+        width: 400px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        border-color: gray;
+        margin-bottom: 100px;
+      }
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+      .notifications {
+          background-color: rgb(49, 109, 245);
+          color: white;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          padding-right: 10px;
+          padding-left: 10px;
+          border-radius: 20px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+    /*Exercise 2*/
+      .search-header {
+        background-color: rgb(177, 43, 177);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 100px;
+      }
+      .home-txt {
+        width: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 70px;
+
+      }
+      .search-box {
+        flex: 1;
+
+      }
+        .search-input {
+          width: 100%;
+          height: 30px;
+          padding-left: 20px;
+          margin-top: 12px;
+          margin-bottom: 12px;
+          border: none;
+          border-radius: 15px;
+        }
+
+      .download-txt {
+        width: 70px;
+        font-size: 18px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: 100px;
+      }
+
+    /*Exercise 3*/
+    p {
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    .rec-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .img-div {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-right: 15px;
+      }
+      .details-div {
+        width: 200px;
+      }
+ 
+      .name {
+          font-weight: bold;
+          margin-bottom: 3px
+        }
+        .spec{
+          color: gray;
+          margin-bottom: 5px
+        }
+        .pop {
+        color: gray;
+        font-size: 14px;
+        }
+      .follow-button {
+        background-color: rgb(90, 90, 241);
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <!--EXERCISE 1-->
+
+    <div class="container">
+      <div class="flexbox">
+        <div>Home</div>
+        <div class="notifications">14</div>
+      </div>
+
+      <div class="flexbox">
+        <div>Notifications</div>
+        <div class="notifications">3</div>
+      </div>
+
+      <div class="flexbox">
+        <div>Messages</div>
+        <div class="notifications">5</div>
+      </div>
+    </div>
+
+
+  <!--EXERCISE 2-->
+    <div class="search-header">
+      <div class="home-txt">Home</div>
+      <div class="search-box"><input class="search-input" type="text" placeholder="Search"></div>
+      <div class="download-txt">Download</div>
+    </div>
+
+
+  <!--EXERCISE 3-->
+  
+    <div class="rec-profile">
+      <img class="img-div" src="/youtube-clone/thumbnails/marquespp.webp" alt="">
+      <div class="details-div">
+        <p class="name">Maque</p>
+        <p class="spec">Tech</p>
+        <p class="pop">Popular</p>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+
+    <div class="rec-profile">
+      <img class="img-div" src="/youtube-clone/thumbnails/beastpp.webp" alt="">
+      <div class="details-div">
+        <p class="name">Beast</p>
+        <p class="spec">Phil.</p>
+        <p class="pop">Popular</p>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+
+    <div class="rec-profile">
+      <img class="img-div" src="/youtube-clone/thumbnails/Markiplierpp.webp" alt="">
+      <div class="details-div">
+        <p class="name">Mark</p>
+        <p class="spec">Unknown</p>
+        <p class="pop">Popular</p>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+    
+  </div>
+
+  </body>
+
+</html>
